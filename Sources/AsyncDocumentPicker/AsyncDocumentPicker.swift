@@ -6,7 +6,7 @@ public enum AsyncDocumentPicker {}
 @available(iOS 14.0, *)
 public extension AsyncDocumentPicker {
   @MainActor
-  func pickDocuments(
+  static func pickDocuments(
     forOpeningContentTypes contentTypes: [UTType],
     from hostingVC: UIViewController,
     animated flag: Bool
